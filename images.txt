@@ -1,3 +1,4 @@
+node:16-buster-slim
 node:16.20.2
 node:20.14.0
 
