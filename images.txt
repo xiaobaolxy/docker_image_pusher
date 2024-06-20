@@ -1,3 +1,4 @@
+prom/mysqld-exporter:v0.15.1
 node:16-buster-slim
 node:16.20.2
 node:20.14.0
@@ -8,3 +9,5 @@ node:20.14.0
 #xhofe/alist:latest
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
+
+# registry.cn-hangzhou.aliyuncs.com/bpmaxpub/node:16-buster-slim
