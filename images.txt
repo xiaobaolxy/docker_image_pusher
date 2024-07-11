@@ -1,7 +1,9 @@
-prom/mysqld-exporter:v0.15.1
-node:16-buster-slim
-node:16.20.2
-node:20.14.0
+#prom/mysqld-exporter:v0.15.1
+#node:16-buster-slim
+#node:16.20.2
+#node:20.14.0
+redis/redisinsight:2.52
+
 
 #nginx
 #支持私库
