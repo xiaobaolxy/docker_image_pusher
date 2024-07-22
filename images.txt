@@ -2,8 +2,8 @@
 #node:16-buster-slim
 #node:16.20.2
 #node:20.14.0
-redis/redisinsight:2.52
-
+#redis/redisinsight:2.52
+registry:2.8.3
 
 #nginx
 #支持私库
