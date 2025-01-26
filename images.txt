@@ -10,6 +10,8 @@
 jenkins/jenkins:2.470
 provectuslabs/kafka-ui:v0.7.2
 verdaccio/verdaccio:6.0.4
+ollama/ollama:0.5.7
+
 
 #nginx
 #支持私库
