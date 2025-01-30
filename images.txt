@@ -16,7 +16,7 @@ nvidia/cuda:12.4.1-cudnn-runtime-ubuntu20.04
 ghcr.io/open-webui/open-webui:0.5.7-ollama
 ghcr.io/open-webui/open-webui:main
 ghcr.io/open-webui/open-webui:cuda
-
+1panel/maxkb:v1.9.1
 
 #nginx
 #支持私库
