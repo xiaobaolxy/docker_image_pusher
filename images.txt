@@ -7,16 +7,17 @@
 #bitnami/kafka:2.8.1
 #bitnami/zookeeper:3.9.2
 #neilpang/acme.sh:3.0.7
-jenkins/jenkins:2.470
-provectuslabs/kafka-ui:v0.7.2
-verdaccio/verdaccio:6.0.4
-ollama/ollama:0.5.12
-nvidia/cuda:12.6.2-cudnn-runtime-ubuntu20.04
-nvidia/cuda:12.4.1-cudnn-runtime-ubuntu20.04
-ghcr.io/open-webui/open-webui:0.5.7-ollama
-ghcr.io/open-webui/open-webui:main
-ghcr.io/open-webui/open-webui:cuda
-1panel/maxkb:v1.9.1
+#jenkins/jenkins:2.470
+#provectuslabs/kafka-ui:v0.7.2
+#verdaccio/verdaccio:6.0.4
+#ollama/ollama:0.5.12
+#nvidia/cuda:12.6.2-cudnn-runtime-ubuntu20.04
+#nvidia/cuda:12.4.1-cudnn-runtime-ubuntu20.04
+#ghcr.io/open-webui/open-webui:0.5.7-ollama
+#ghcr.io/open-webui/open-webui:main
+#ghcr.io/open-webui/open-webui:cuda
+#1panel/maxkb:v1.9.1
+vllm/vllm-openai:v0.7.3
 
 #nginx
 #支持私库
