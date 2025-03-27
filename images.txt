@@ -19,7 +19,9 @@
 #1panel/maxkb:v1.9.1
 #vllm/vllm-openai:v0.7.3
 
-ubuntu:24.04
+#ubuntu:24.04
+keking/kkfileview:4.1.0
+
 
 # ragflow ===
 
