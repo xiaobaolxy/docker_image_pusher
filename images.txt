@@ -18,12 +18,12 @@
 #ghcr.io/open-webui/open-webui:cuda
 #1panel/maxkb:v1.9.1
 #vllm/vllm-openai:v0.7.3
-
 #ubuntu:24.04
-keking/kkfileview:4.1.0
+#keking/kkfileview:4.1.0
 
+fluent/fluent-bit:4.0.0-arm64
 
-# ragflow ===
+# ragflow === 
 
 #infiniflow/ragflow:v0.17.0-slim
 #infiniflow/ragflow:v0.17.0
@@ -36,7 +36,8 @@ keking/kkfileview:4.1.0
 #infiniflow/infinity:v0.6.0-dev3
 # elasticsearch
 
-# ===
+# ragflow END ===
+
 
 #nginx
 #支持私库
