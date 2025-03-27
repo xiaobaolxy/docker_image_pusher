@@ -19,16 +19,22 @@
 #1panel/maxkb:v1.9.1
 #vllm/vllm-openai:v0.7.3
 
-# ragflow 
+ubuntu:24.04
+
+# ragflow ===
+
 #infiniflow/ragflow:v0.17.0-slim
-infiniflow/ragflow:v0.17.0
+#infiniflow/ragflow:v0.17.0
+
 # redis
 #valkey/valkey:8
+
 # minio
 #quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
 #infiniflow/infinity:v0.6.0-dev3
 # elasticsearch
 
+# ===
 
 #nginx
 #支持私库
