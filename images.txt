@@ -23,6 +23,7 @@
 
 fluent/fluent-bit:4.0.0-arm64
 
+
 # ragflow === 
 
 #infiniflow/ragflow:v0.17.0-slim
