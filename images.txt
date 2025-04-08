@@ -21,8 +21,10 @@
 #ubuntu:24.04
 #keking/kkfileview:4.1.0
 
-fluent/fluent-bit:4.0.0-arm64
-fluent/fluent-bit:4.0.0-amd64
+#fluent/fluent-bit:4.0.0-arm64
+#fluent/fluent-bit:4.0.0-amd64
+
+vitess/logrotate:v0.19.10
 
 # ragflow === 
 
