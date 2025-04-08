@@ -22,7 +22,7 @@
 #keking/kkfileview:4.1.0
 
 fluent/fluent-bit:4.0.0-arm64
-
+fluent/fluent-bit:4.0.0-amd64
 
 # ragflow === 
 
