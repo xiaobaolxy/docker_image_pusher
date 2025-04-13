@@ -19,7 +19,7 @@
 #1panel/maxkb:v1.9.1
 #vllm/vllm-openai:v0.7.3
 #ubuntu:24.04
-ubuntu:22.04 --platform=linux/arm64
+--platform=linux/arm64 ubuntu:22.04
 #keking/kkfileview:4.1.0
 
 #fluent/fluent-bit:4.0.0-arm64
