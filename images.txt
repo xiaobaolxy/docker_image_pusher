@@ -22,8 +22,14 @@
 #--platform=linux/arm64 ubuntu:22.04
 #ubuntu:22.04
 #keking/kkfileview:4.1.0
---platform=linux/arm64 nginx:1.26.3-bookworm
-nginx:1.26.3-bookworm
+#--platform=linux/arm64 nginx:1.26.3-bookworm
+#nginx:1.26.3-bookworm
+
+22.14.0-bookworm-slim
+--platform=linux/arm64 22.14.0-bookworm-slim
+
+
+
 
 
 #fluent/fluent-bit:4.0.0-arm64
