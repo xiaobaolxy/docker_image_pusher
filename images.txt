@@ -18,6 +18,10 @@
 #ghcr.io/open-webui/open-webui:cuda
 #1panel/maxkb:v1.9.1
 #vllm/vllm-openai:v0.7.3
+
+ubuntu:20.04
+--platform=linux/arm64 ubuntu:20.04
+
 #ubuntu:24.04
 #--platform=linux/arm64 ubuntu:22.04
 #ubuntu:22.04
@@ -25,7 +29,7 @@
 #--platform=linux/arm64 nginx:1.26.3-bookworm
 #nginx:1.26.3-bookworm
 
-node:22.14.0-bookworm
+#node:22.14.0-bookworm
 #node:22.14.0-bookworm-slim
 #--platform=linux/arm64 node:22.14.0-bookworm-slim
 
