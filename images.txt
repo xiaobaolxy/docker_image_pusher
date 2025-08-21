@@ -26,7 +26,7 @@
 #--platform=linux/arm64 ubuntu:22.04
 #ubuntu:22.04
 
---platform=linux/arm64 mysql:8.0.36
+#--platform=linux/arm64 mysql:8.0.36
 
 #keking/kkfileview:4.1.0
 #--platform=linux/arm64 nginx:1.26.3-bookworm
@@ -38,9 +38,9 @@
 
 
 
-golang:1.24.1-bookworm
+#golang:1.24.1-bookworm
 
-
+node:20.18.3-bookworm-slim
 
 
 #fluent/fluent-bit:4.0.0-arm64
