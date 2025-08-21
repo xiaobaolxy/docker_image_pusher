@@ -40,8 +40,9 @@
 
 #golang:1.24.1-bookworm
 
-node:20.18.3-bookworm-slim
+#node:20.18.3-bookworm-slim
 
+node:18.20.8-slim
 
 #fluent/fluent-bit:4.0.0-arm64
 #fluent/fluent-bit:4.0.0-amd64
