@@ -18,6 +18,7 @@
 #ghcr.io/open-webui/open-webui:cuda
 #1panel/maxkb:v1.9.1
 #vllm/vllm-openai:v0.7.3
+vllm/vllm-openai:v0.10.1.1
 
 #ubuntu:20.04
 #--platform=linux/arm64 ubuntu:20.04
@@ -42,7 +43,7 @@
 
 #node:20.18.3-bookworm-slim
 
-node:18.20.8-slim
+#node:18.20.8-slim
 
 #fluent/fluent-bit:4.0.0-arm64
 #fluent/fluent-bit:4.0.0-amd64
@@ -73,3 +74,4 @@ node:18.20.8-slim
 #--platform=linux/arm64 xiaoyaliu/alist
 
 # registry.cn-hangzhou.aliyuncs.com/bpmaxpub/node:16-buster-slim
+
