@@ -19,7 +19,7 @@
 #1panel/maxkb:v1.9.1
 #vllm/vllm-openai:v0.7.3
 #vllm/vllm-openai:v0.10.1.1
-vllm/vllm-openai:v0.9.2
+#vllm/vllm-openai:v0.9.2
 
 #ubuntu:20.04
 #--platform=linux/arm64 ubuntu:20.04
@@ -37,6 +37,9 @@ vllm/vllm-openai:v0.9.2
 #node:22.14.0-bookworm
 #node:22.14.0-bookworm-slim
 #--platform=linux/arm64 node:22.14.0-bookworm-slim
+
+
+--platform=linux/arm64 envoyproxy/envoy:v1.33.10
 
 
 
