@@ -3,9 +3,10 @@
 #prom/mysqld-exporter:v0.15.1
 #danielqsj/kafka-exporter:v1.9.0
 
-aeert/openvpn:latest
-openvpn-web:latest
+####aeert/openvpn:latest
+####openvpn-web:latest
 
+openvpn/openvpn-as:3.0.1-84b60e70-Ubuntu24
 
 #node:16-buster-slim
 #node:16.20.2
