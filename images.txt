@@ -1,7 +1,11 @@
 
 #gcr.io/cadvisor/cadvisor:v0.52.1
 #prom/mysqld-exporter:v0.15.1
-danielqsj/kafka-exporter:v1.9.0
+#danielqsj/kafka-exporter:v1.9.0
+
+aeert/openvpn:latest
+openvpn-web
+
 
 #node:16-buster-slim
 #node:16.20.2
