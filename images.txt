@@ -4,7 +4,7 @@
 #danielqsj/kafka-exporter:v1.9.0
 
 aeert/openvpn:latest
-openvpn-web
+openvpn-web:latest
 
 
 #node:16-buster-slim
@@ -47,7 +47,7 @@ openvpn-web
 #--platform=linux/arm64 node:22.14.0-bookworm-slim
 
 
---platform=linux/arm64 envoyproxy/envoy:v1.33.10
+#--platform=linux/arm64 envoyproxy/envoy:v1.33.10
 
 
 
