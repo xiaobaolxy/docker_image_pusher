@@ -17,7 +17,8 @@
 #node:16-buster-slim
 #node:16.20.2
 #node:20.14.0
-node:24.11.1
+#node:24.11.1
+node:24.11.1-alpine
 
 #redis/redisinsight:2.52
 #registry:2.8.3
