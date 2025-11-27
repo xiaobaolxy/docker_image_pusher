@@ -8,15 +8,17 @@
 
 #openvpn/openvpn-as:3.0.1-84b60e70-Ubuntu24
 
-clickhouse/clickhouse-server:25.10.3
-minio/minio:RELEASE.2025-09-07T16-13-09Z
-postgres:17.7
+#clickhouse/clickhouse-server:25.10.3
+#minio/minio:RELEASE.2025-09-07T16-13-09Z
+#postgres:17.7
 
 
 
 #node:16-buster-slim
 #node:16.20.2
 #node:20.14.0
+node:24.11.1
+
 #redis/redisinsight:2.52
 #registry:2.8.3
 #bitnami/kafka:2.8.1
