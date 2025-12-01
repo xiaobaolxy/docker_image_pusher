@@ -3,8 +3,6 @@
 #prom/mysqld-exporter:v0.15.1
 #danielqsj/kafka-exporter:v1.9.0
 
-####aeert/openvpn:latest
-####openvpn-web:latest
 
 #openvpn/openvpn-as:3.0.1-84b60e70-Ubuntu24
 
@@ -13,12 +11,17 @@
 #postgres:17.7
 
 
+kibana:8.8.1
+
 
 #node:16-buster-slim
 #node:16.20.2
 #node:20.14.0
 #node:24.11.1
-node:24.11.1-alpine
+#node:24.11.1-alpine
+
+
+
 
 #redis/redisinsight:2.52
 #registry:2.8.3
@@ -83,7 +86,6 @@ node:24.11.1-alpine
 # minio
 #quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
 #infiniflow/infinity:v0.6.0-dev3
-# elasticsearch
 
 # ragflow END ===
 
