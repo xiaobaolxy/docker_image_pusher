@@ -82,6 +82,7 @@ grafana/loki:3.6.2
 
 #fluent/fluent-bit:4.0.0-arm64
 #fluent/fluent-bit:4.0.0-amd64
+fluent/fluent-bit:4.2.0-amd64
 
 #vitess/logrotate:v0.19.10
 
