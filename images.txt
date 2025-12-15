@@ -19,7 +19,7 @@
 #prom/prometheus:v2.55.1
 #prom/alertmanager:v0.29.0
 #grafana/grafana:12.2-ubuntu
-grafana/loki:3.6.2
+#grafana/loki:3.6.2
 
 #kibana:8.8.1
 
@@ -36,6 +36,7 @@ grafana/loki:3.6.2
 #redis/redisinsight:2.52
 #registry:2.8.3
 #bitnami/kafka:2.8.1
+bitnami/kafka:2.8.2
 #bitnami/zookeeper:3.9.2
 #neilpang/acme.sh:3.0.7
 #jenkins/jenkins:2.470
