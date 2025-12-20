@@ -22,8 +22,9 @@
 #grafana/loki:3.6.2
 
 #kibana:8.8.1
-kibana:8.18.8
-elasticsearch:8.18.8
+#kibana:8.18.8
+elasticsearch:8.8.1
+#elasticsearch:8.18.8
 
 
 
