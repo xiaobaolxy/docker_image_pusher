@@ -1,22 +1,17 @@
 
-
 #alpine:3.22.2
 
 #registry:3.0.0
 
-
 #gcr.io/cadvisor/cadvisor:v0.52.1
 #prom/mysqld-exporter:v0.15.1
 #danielqsj/kafka-exporter:v1.9.0
-
 
 #openvpn/openvpn-as:3.0.1-84b60e70-Ubuntu24
 
 #clickhouse/clickhouse-server:25.10.3
 #minio/minio:RELEASE.2025-09-07T16-13-09Z
 #postgres:17.7
-
-
 
 #prom/prometheus:v2.55.1
 #prom/alertmanager:v0.29.0
@@ -27,8 +22,6 @@
 #kibana:8.18.8
 #elasticsearch:8.8.1
 #elasticsearch:8.18.8
-
-
 
 #node:16-buster-slim
 #node:16.20.2
@@ -67,7 +60,8 @@
 
 #--platform=linux/arm64 mysql:8.0.36
 #percona/percona-server:8.0.44
-percona/percona-server:8.0.28
+#percona/percona-server:8.0.28
+percona/percona-xtrabackup:8.0.35-34
 
 #keking/kkfileview:4.1.0
 #--platform=linux/arm64 nginx:1.26.3-bookworm
