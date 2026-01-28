@@ -61,7 +61,9 @@
 #--platform=linux/arm64 mysql:8.0.36
 #percona/percona-server:8.0.44
 #percona/percona-server:8.0.28
-percona/percona-xtrabackup:8.0.35-34
+#percona/percona-xtrabackup:8.0.35-34
+
+dbeaver/cloudbeaver:25.3
 
 #keking/kkfileview:4.1.0
 #--platform=linux/arm64 nginx:1.26.3-bookworm
