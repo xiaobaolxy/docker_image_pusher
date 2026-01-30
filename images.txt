@@ -64,7 +64,7 @@ openvpn/openvpn-as:3.0.2-87c70987-Ubuntu24
 #percona/percona-server:8.0.28
 #percona/percona-xtrabackup:8.0.35-34
 
-dbeaver/cloudbeaver:25.3
+#dbeaver/cloudbeaver:25.3
 
 #keking/kkfileview:4.1.0
 #--platform=linux/arm64 nginx:1.26.3-bookworm
@@ -87,7 +87,7 @@ dbeaver/cloudbeaver:25.3
 
 #fluent/fluent-bit:4.0.0-arm64
 #fluent/fluent-bit:4.0.0-amd64
-fluent/fluent-bit:4.2.0-amd64
+#fluent/fluent-bit:4.2.0-amd64
 
 #vitess/logrotate:v0.19.10
 
