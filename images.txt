@@ -63,6 +63,7 @@ openvpn/openvpn-as:3.0.2-87c70987-Ubuntu24
 #percona/percona-server:8.0.44
 #percona/percona-server:8.0.28
 #percona/percona-xtrabackup:8.0.35-34
+--platform=linux/arm64 percona/percona-server:8.0.44
 
 #dbeaver/cloudbeaver:25.3
 
