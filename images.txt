@@ -1,4 +1,4 @@
-python:3.10-slim
+#python:3.10-slim
 #alpine:3.22.2
 
 #registry:3.0.0
@@ -81,7 +81,8 @@ python:3.10-slim
 
 
 #golang:1.24.1-bookworm
-golang:1.25.6-bookworm
+#golang:1.25.6-bookworm
+golang:1.26.2-alpine3.22
 
 #node:20.18.3-bookworm-slim
 
