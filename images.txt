@@ -82,7 +82,7 @@
 
 #golang:1.24.1-bookworm
 #golang:1.25.6-bookworm
-golang:1.26.2-alpine3.22
+#golang:1.26.2-alpine3.22
 
 #node:20.18.3-bookworm-slim
 
@@ -93,6 +93,9 @@ golang:1.26.2-alpine3.22
 #fluent/fluent-bit:4.2.0-amd64
 
 #vitess/logrotate:v0.19.10
+
+linuxserver/wireguard:1.0.20250521
+
 
 # ragflow === 
 
