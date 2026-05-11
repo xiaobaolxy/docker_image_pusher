@@ -24,15 +24,6 @@
 #elasticsearch:8.8.1
 #elasticsearch:8.18.8
 
-#node:16-buster-slim
-#node:16.20.2
-#node:20.14.0
-#node:24.11.1
-#node:24.11.1-alpine
-#node:24.12.0
-#node:24.12.0-alpine3.22
-
-
 #redis/redisinsight:2.52
 #registry:2.8.3
 #bitnami/kafka:2.8.1
@@ -71,22 +62,29 @@
 #--platform=linux/arm64 nginx:1.26.3-bookworm
 #nginx:1.26.3-bookworm
 
+
+#node:16-buster-slim
+#node:16.20.2
+#node:18.20.8-slim
+node:22.14.0-alpine
+#node:20.14.0
+#node:20.18.3-bookworm-slim
+#node:24.11.1
+#node:24.11.1-alpine
+#node:24.12.0
+#node:24.12.0-alpine3.22
 #node:22.14.0-bookworm
 #node:22.14.0-bookworm-slim
 #--platform=linux/arm64 node:22.14.0-bookworm-slim
 
-
 #--platform=linux/arm64 envoyproxy/envoy:v1.33.10
 
 
-
+golang:1.22.12-alpine3.20
 #golang:1.24.1-bookworm
 #golang:1.25.6-bookworm
 #golang:1.26.2-alpine3.22
 
-#node:20.18.3-bookworm-slim
-
-#node:18.20.8-slim
 
 #fluent/fluent-bit:4.0.0-arm64
 #fluent/fluent-bit:4.0.0-amd64
@@ -94,7 +92,7 @@
 
 #vitess/logrotate:v0.19.10
 
-linuxserver/wireguard:1.0.20250521
+#linuxserver/wireguard:1.0.20250521
 
 
 # ragflow === 
@@ -118,6 +116,5 @@ linuxserver/wireguard:1.0.20250521
 #xhofe/alist:latest
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
-
 # registry.cn-hangzhou.aliyuncs.com/bpmaxpub/node:16-buster-slim
 
