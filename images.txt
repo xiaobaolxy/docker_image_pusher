@@ -24,6 +24,8 @@
 #elasticsearch:8.8.1
 #elasticsearch:8.18.8
 
+--platform=linux/arm64 elasticsearch:8.19.8
+
 #redis/redisinsight:2.52
 #registry:2.8.3
 #bitnami/kafka:2.8.1
