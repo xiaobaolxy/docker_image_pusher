@@ -1,6 +1,10 @@
 #python:3.10-slim
 #alpine:3.22.2
 
+busybox:1.38.0-musl
+--platform=linux/arm64 busybox:1.38.0-musl
+
+
 #registry:3.0.0
 
 #gcr.io/cadvisor/cadvisor:v0.52.1
@@ -82,7 +86,7 @@
 #--platform=linux/arm64 envoyproxy/envoy:v1.33.10
 
 
-golang:1.22.12-alpine3.20
+#golang:1.22.12-alpine3.20
 #golang:1.24.1-bookworm
 #golang:1.25.6-bookworm
 #golang:1.26.2-alpine3.22
