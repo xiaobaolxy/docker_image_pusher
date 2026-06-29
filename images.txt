@@ -1,5 +1,5 @@
 #python:3.10-slim
-python:3.12.13-slim
+# python:3.12.13-slim
 
 
 #alpine:3.22.2
@@ -23,7 +23,9 @@ python:3.12.13-slim
 
 #percona/percona-distribution-postgresql:17.10-ubi8
 #percona/percona-pgbackrest:2.58.0
-percona/proxysql3:3.0.6
+#percona/proxysql3:3.0.6
+
+pgvector/pgvector:pg17
 
 
 
