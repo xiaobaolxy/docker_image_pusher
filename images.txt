@@ -1,8 +1,8 @@
 #python:3.10-slim
 #alpine:3.22.2
 
-busybox:1.38.0-musl
---platform=linux/arm64 busybox:1.38.0-musl
+# busybox:1.38.0-musl
+# --platform=linux/arm64 busybox:1.38.0-musl
 
 
 #registry:3.0.0
@@ -17,6 +17,9 @@ busybox:1.38.0-musl
 #clickhouse/clickhouse-server:25.10.3
 #minio/minio:RELEASE.2025-09-07T16-13-09Z
 #postgres:17.7
+percona/percona-distribution-postgresql:17.10-ubi8
+percona/percona-pgbackrest:2.58.0
+
 
 #prom/prometheus:v2.55.1
 #prom/alertmanager:v0.29.0
@@ -96,32 +99,32 @@ busybox:1.38.0-musl
 #fluent/fluent-bit:4.0.0-amd64
 #fluent/fluent-bit:4.2.0-amd64
 
-#vitess/logrotate:v0.19.10
+# vitess/logrotate:v0.19.10
 
-#linuxserver/wireguard:1.0.20250521
+# linuxserver/wireguard:1.0.20250521
 
 
 # ragflow === 
 
-#infiniflow/ragflow:v0.17.0-slim
-#infiniflow/ragflow:v0.17.0
+# infiniflow/ragflow:v0.17.0-slim
+# infiniflow/ragflow:v0.17.0
 
 # redis
-#valkey/valkey:8
---platform=linux/arm64 redis:6.2.22
+# valkey/valkey:8
+# --platform=linux/arm64 redis:6.2.22
 
 # minio
-#quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
-#infiniflow/infinity:v0.6.0-dev3
+# quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
+# infiniflow/infinity:v0.6.0-dev3
 
 # ragflow END ===
 
 
-#nginx
-#支持私库
-#k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
-#xhofe/alist:latest
-#支持指定架构
-#--platform=linux/arm64 xiaoyaliu/alist
+# nginx
+# 支持私库
+# k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
+# xhofe/alist:latest
+# 支持指定架构
+# --platform=linux/arm64 xiaoyaliu/alist
 # registry.cn-hangzhou.aliyuncs.com/bpmaxpub/node:16-buster-slim
 
