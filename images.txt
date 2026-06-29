@@ -1,4 +1,7 @@
 #python:3.10-slim
+python:3.12.13-slim
+
+
 #alpine:3.22.2
 
 # busybox:1.38.0-musl
@@ -17,8 +20,11 @@
 #clickhouse/clickhouse-server:25.10.3
 #minio/minio:RELEASE.2025-09-07T16-13-09Z
 #postgres:17.7
-percona/percona-distribution-postgresql:17.10-ubi8
-percona/percona-pgbackrest:2.58.0
+
+#percona/percona-distribution-postgresql:17.10-ubi8
+#percona/percona-pgbackrest:2.58.0
+percona/proxysql3:3.0.6
+
 
 
 #prom/prometheus:v2.55.1
