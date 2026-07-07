@@ -27,7 +27,8 @@
 
 #pgvector/pgvector:pg17
 
-ghcr.io/openclaw/openclaw:2026.6.10
+# openclaw 官方镜像
+# ghcr.io/openclaw/openclaw:2026.6.10
 
 #prom/prometheus:v2.55.1
 #prom/alertmanager:v0.29.0
