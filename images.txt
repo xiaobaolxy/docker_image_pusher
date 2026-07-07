@@ -27,7 +27,7 @@
 
 #pgvector/pgvector:pg17
 
-# openclaw 官方镜像
+# openclaw 官方镜像（该链接形式可以拉取）
 # ghcr.io/openclaw/openclaw:2026.6.10
 
 #prom/prometheus:v2.55.1
