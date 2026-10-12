@@ -9,6 +9,7 @@
 
 # busybox:1.38.0-musl
 # --platform=linux/arm64 busybox:1.38.0-musl
+# --platform=linux/amd64
 
 
 #registry:3.0.0
