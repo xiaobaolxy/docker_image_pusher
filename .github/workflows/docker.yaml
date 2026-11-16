@@ -99,9 +99,9 @@ jobs:
             echo "image_name: $image_name"
             
             # 如果镜像存在于数组中，则添加temp_map
-            if [[ -n "${temp_map[$image_name]}" ]]; then
+            if [[ -n "${temp_map[$image_name]:-}" ]]; then
                   # 如果temp_map已经存在镜像名，判断是不是同一命名空间
-                  if [[ "${temp_map[$image_name]}" != $name_space  ]]; then
+                  if [[ "${temp_map[$image_name]:-}" != "$name_space" ]]; then
                     echo "duplicate image name: $image_name"
                     duplicate_images[$image_name]="true"
                   fi
@@ -142,7 +142,7 @@ jobs:
         
             name_space_prefix=""
             # 如果镜像名重名
-            if [[ -n "${duplicate_images[$image_name]}" ]]; then
+            if [[ -n "${duplicate_images[$image_name]:-}" ]]; then
                 #如果命名空间非空，将命名空间加到前缀
                 if [[ -n "${name_space}" ]]; then
                   name_space_prefix="${name_space}_"
