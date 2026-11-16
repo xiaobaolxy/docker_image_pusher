@@ -16,48 +16,61 @@ jobs:
 
   build:
     name: Pull
-    runs-on: ubuntu-latest
+    # 固定 runner 版本，避免 ubuntu-latest 在版本迁移期间改变磁盘布局。
+    runs-on: ubuntu-24.04
     steps:
-    - name: Before freeing up disk space
+    - name: Reclaim ephemeral runner disk safely
+      shell: bash
       run: |
-        echo "Before freeing up disk space"
-        echo "=============================================================================="
-        df -hT
-        echo "=============================================================================="
+        set -euo pipefail
 
-    # 增加可用磁盘空间
-    - name: Maximize build space
-      uses: easimon/maximize-build-space@master
-      with:
+        # 以下清理只适用于 GitHub 托管的一次性 runner。禁止在自建 runner 上执行。
+        if [[ "${RUNNER_ENVIRONMENT:-}" != "github-hosted" ]]; then
+          echo "::error::Refusing cleanup outside a GitHub-hosted runner"
+          exit 1
+        fi
 
-        root-reserve-mb: 2048
-        swap-size-mb: 128
-        remove-dotnet: 'true'
-        remove-haskell: 'true'
-        # 如果空间还是不够用，可以把以下开启，清理出更多空间
-        # remove-android: 'true'
-        # remove-codeql: 'true'
-        build-mount-path: '/var/lib/docker/'
+        echo "Before cleanup:"
+        df -hT /
+        df -i /
+        sudo docker system df || true
 
-    - name: Restart docker
-      run: sudo service docker restart
+        # 仅清空未被任何容器使用的镜像、容器、网络和构建缓存，不清理卷。
+        if sudo docker info >/dev/null 2>&1; then
+          sudo docker system prune --all --force
+        else
+          echo "Docker daemon is not running; Docker cache cleanup skipped."
+        fi
 
-    - name: Free up disk space complete
-      run: |
-        echo "Free up disk space complete"
-        echo "=============================================================================="
-        df -hT
-        echo "=============================================================================="
+        # 本工作流只执行 pull/tag/push，不需要这些预装工具链。
+        # 使用固定绝对路径逐个删除，避免通配符误删。
+        for path in \
+          /usr/share/dotnet \
+          /opt/ghc \
+          /usr/local/lib/android \
+          /opt/hostedtoolcache/CodeQL; do
+          if [[ -e "$path" ]]; then
+            echo "Removing disposable toolchain: $path"
+            sudo rm -rf -- "$path"
+          fi
+        done
+
+        sudo apt-get clean
+
+        echo "After cleanup:"
+        df -hT /
+        df -i /
+        sudo docker system df || true
 
     - name: Checkout Code
       uses: actions/checkout@v4
 
-    - name: Docker Setup Buildx
-      uses: docker/setup-buildx-action@v3
-
     - name: Build and push image Aliyun
       run: |
-        docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
+        set -euo pipefail
+
+        printf '%s' "$ALIYUN_REGISTRY_PASSWORD" | \
+          docker login --username "$ALIYUN_REGISTRY_USER" --password-stdin "$ALIYUN_REGISTRY"
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
@@ -145,13 +158,14 @@ jobs:
             docker push $new_image
             echo "开始清理磁盘空间"
             echo "=============================================================================="
-            df -hT
+            df -hT /
+            docker system df
             echo "=============================================================================="
-            docker rmi $image
-            docker rmi $new_image
+            docker image rm "$image" "$new_image" || true
             echo "磁盘空间清理完毕"
             echo "=============================================================================="
-            df -hT
-            echo "=============================================================================="     
+            df -hT /
+            docker system df
+            echo "=============================================================================="
             
         done < images.txt
