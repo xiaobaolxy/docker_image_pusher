@@ -98,8 +98,9 @@
 #node:22.14.0-bookworm
 #node:22.14.0-bookworm-slim
 #--platform=linux/arm64 node:22.14.0-bookworm-slim
---platform linux/amd64 node:24.22.3
---platform linux/amd64 node:24.22.3-alpine3.24
+#--platform linux/amd64 node:24.22.3
+#--platform linux/amd64 node:24.22.3-alpine3.24
+--platform linux/amd64 node:24.18.0
 
 
 #--platform=linux/arm64 envoyproxy/envoy:v1.33.10
