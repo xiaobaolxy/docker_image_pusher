@@ -24,6 +24,7 @@
 #clickhouse/clickhouse-server:25.10.3
 #minio/minio:RELEASE.2025-09-07T16-13-09Z
 #postgres:17.7
+postgres:17.12-trixie
 
 #percona/percona-distribution-postgresql:17.10-ubi8
 #percona/percona-pgbackrest:2.58.0
@@ -101,7 +102,7 @@
 #--platform linux/amd64 node:24.22.3
 #--platform linux/amd64 node:24.22.3-alpine3.24
 #--platform linux/amd64 node:24.18.0
---platform linux/amd64 node:24.21.0-bookworm-slim
+#--platform linux/amd64 node:24.21.0-bookworm-slim
 
 
 #--platform=linux/arm64 envoyproxy/envoy:v1.33.10
