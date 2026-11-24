@@ -24,7 +24,7 @@
 #clickhouse/clickhouse-server:25.10.3
 #minio/minio:RELEASE.2025-09-07T16-13-09Z
 #postgres:17.7
-postgres:17.12-trixie
+#postgres:17.12-trixie
 
 #percona/percona-distribution-postgresql:17.10-ubi8
 #percona/percona-pgbackrest:2.58.0
@@ -133,7 +133,7 @@ neo4j:2026.10.2-community-trixie
 
 # redis
 # valkey/valkey:8
-redis:8-alpine
+# redis:8-alpine
 # --platform=linux/arm64 redis:6.2.22
 
 # minio
