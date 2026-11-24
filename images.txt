@@ -107,7 +107,8 @@ postgres:17.12-trixie
 
 #--platform=linux/arm64 envoyproxy/envoy:v1.33.10
 
-neo4j:5.26.33-community-ubi10
+#neo4j:5.26.33-community-ubi10
+neo4j:2026.10.2-community-trixie
 
 
 #golang:1.22.12-alpine3.20
